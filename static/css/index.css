@@ -114,11 +114,11 @@ nav {
 }
 
 .menu li a{
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .menu li a:hover{
-    transition: 0.2s;
+    transition: 0.5s;
     font-size: 20px;
     color: #8f71e7;
     cursor: pointer;
@@ -199,7 +199,7 @@ nav {
         display: block;
         position: absolute;
         right: 30px;
-        top: 50px;
+        top: 32px;
     }   
    
 }
@@ -234,7 +234,7 @@ nav {
 }
 
 .slider{
-    padding-top: 150px;
+    margin-top: 50%;
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -374,4 +374,69 @@ nav {
 }
 #radio10:checked ~ .navigation-auto .auto-btn10{
     background: #8f71e7;
+}
+
+.download-area{
+    padding: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly
+}
+
+.download {
+    background-color: #343333;
+    height: 200px;
+    width: 200px;
+    padding: 50px;
+    border-radius: 40px;
+    box-shadow: #000000 5px 5px 5px;
+    transition: 1s;
+}
+
+.download:hover {
+    transition: 1s;
+    box-shadow: #000000 10px 10px 10px;
+}
+
+.download-button {
+    text-align: center;
+    font-size: 17px;
+    box-shadow: none;
+    transition: 1s;
+    width: 200px;
+    height: 50px;
+    margin-top: -100%;
+    background-color: #8f71e7;
+    border-radius: 10px;
+    border: none;
+}
+
+.download-button:hover{
+    background-color: #5025d0;
+    border-color: #5025d0;
+    /* box-shadow: #000000 2px 2px 2px; */
+    transition: 1s;
+}
+
+/* .download-button:focus:after{
+    box-shadow: #000000 0.5px 0.5px 0.5px;
+    transition: 1s;
+} */
+.download-button i {
+    padding-right: 5px;
+    float: right;
+}
+
+.windows img{
+    display: block;
+    /* margin-left: -10%; */
+    margin-top: -20%;
+    padding-bottom: 30px;
+}
+
+.mac img{
+    display: block;
+    margin-top: -20%;
+    padding-bottom: 30px;
 }
