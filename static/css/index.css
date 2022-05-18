@@ -137,7 +137,7 @@ nav {
 }
 
 .images-label h1{
-    font-size: 50px;
+    font-size: 60px;
     color: white;
 }
 
@@ -225,16 +225,25 @@ nav {
     padding-left: 50px;
 }*/
 
+main{
+    margin-top: 45%;
+}
 
 
-.intro{
+.intro {
+    padding: 70px;
     text-align: center;
     color: white;
     border-radius: 20px;
 }
 
+.intro h1 {
+    font-size: 50px;
+}
+
 .slider{
-    margin-top: 50%;
+    margin: 0% auto;
+    /* margin-top: 150%; */
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -439,4 +448,36 @@ nav {
     display: block;
     margin-top: -20%;
     padding-bottom: 30px;
+}
+.features-area{
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+     
+.feature{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    padding: 30px;
+    text-align: center;
+}
+
+.feature div{
+    border-radius: 80px;
+    background-color: #8f71e7;
+    margin: 0% 20%;
+    padding: 10px 0px;
+}
+
+.feature h2{
+    color: white;
+}
+
+.feature img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* width: 40%; */
 }
