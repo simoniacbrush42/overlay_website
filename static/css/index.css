@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 :root {
-    --background-color: #282828;
-    --lighter-background: #343333;
+    --background-color: #111;
+    --lighter-background: #111;
+
+    --square-background: rgba(128,128,128,.2);
 
     /*squares*/
     --square-lightest: #274868;
@@ -63,7 +65,7 @@ nav {
     z-index: 99;
     background-color: var(--lighter-background);
     padding: 0px 32px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid rgba(51,51,51,.25);
 }
 
 .menu-button {
@@ -444,7 +446,7 @@ main {
 }
 
 .download {
-    background-color: var(--sq);
+    background-color: var(--square-background);
     height: 200px;
     width: 200px;
     padding: 50px;
