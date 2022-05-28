@@ -192,6 +192,7 @@ nav {
     }
 }
 
+
 @media screen and (max-width: 870px) {
     .images-label {
         margin-top: 40%;
@@ -270,11 +271,12 @@ nav {
 
 main {
     /* margin-top: 45%; */
+    width: 100%;
 }
 
 
 .intro {
-    padding-bottom: 70px;
+    padding: 70px;
     text-align: center;
     color: white;
     border-radius: 20px;
@@ -285,8 +287,8 @@ main {
 }
 
 .slider {
-    margin: 0% auto;
-    margin-top: 140vh;
+    margin: auto;
+    margin-top: 40%;
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -438,10 +440,12 @@ main {
 }
 
 .download-area {
+    margin: 0% 20%;
     padding: 25px;
     display: flex;
     flex-wrap: wrap;
     flex-flow: row wrap;
+    flex-basis: 50%;
     justify-content: space-evenly
 }
 
@@ -507,13 +511,12 @@ main {
     flex-wrap: wrap;
     flex-flow: row wrap;
     justify-content: space-evenly;
+    margin: 0% 20%;
 }
 
 .feature {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 30%;
-    padding: 30px;
     text-align: center;
 }
 
@@ -610,3 +613,13 @@ main {
         opacity: 0;
     }
 } */
+
+
+.features-container{
+    width: 100%;
+    background-color: var(--square-background);
+}
+
+.first-container{
+    height: 100vh;
+}
