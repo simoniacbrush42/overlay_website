@@ -8,6 +8,8 @@
   <!-- <link rel="stylesheet" href="/static/css/bootstrap.min.css" /> -->
   <script src="/static/js/index.js"></script>
   <link rel="stylesheet" href="/static/css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 </head>
 
 <body>
@@ -40,6 +42,10 @@
       <h1>Overlay Images</h1>
     </div> -->
     <div class="first-container">
+      <div class="title-text">
+        <h1>Foresight Overlay</h1>
+        <caption>A stats overlay for many gamemodes on hypixel</caption>
+      </div>
       <div class="slider">
         <div class="slides">
           <input type="radio" name="radio-btn" id="radio1" checked>
@@ -119,50 +125,96 @@
         </div>
       </div> -->
 
-
-      <div class="intro">
-        <h1>Overlay Download</h1>
-      </div>
-
-      <div class="download-area">
-
-        <div class="download windows">
-          <div>
-            <img src="static/images/win-logo.png" alt="windows logo" height="200px;" width="200px;">
-          </div>
-          <button class="download-button">Windows Download<i class="fa fa-download" aria-hidden="true"></i></button>
-        </div>
-        <div class="download mac">
-          <div>
-            <img src="static/images/mac-logo.png" alt="windows logo" height="200px;" width="200px;">
-          </div>
-          <button class="download-button">Mac Download<i class="fa fa-download" aria-hidden="true"></i></button>
-        </div>
-      </div>
     </div>
+
+
 
     <div class="features-container">
       <div class="intro">
         <h1>Features</h1>
       </div>
       <div class="features-area">
-        <div class="feature">
+        <div class="feature" data-aos="fade-right">
           <div>
-            <img src="/static/images/gamemodes.png" height="200px;" width="200px;">
-            <h2>Gamemodes</h2>
-            <p>This overlay supports Bedwars, Skywars, and The Bridge. More Gamemodes may be added later.</p>
+            <!-- <img src="/static/images/gamemodes.png" height="200px;" width="200px;"> -->
+            <h2>Multiple Game Modes Supported</h2>
+            <div class="gamemodes">
+              <div class="gamemode">
+                <div>
+                  <img src="/static/images/bedwarsbed.png" height="200px;" width="200px;">
+                  <h1>Bedwars</h1>
+                  <!-- <p>Use this overlay to see the stats of people in your bedwars games.</p>
+                  <ul>
+                    <li>Winstreak</li>
+                    <li>FKDR</li>
+                    <li>Final Kills</li>
+                    <li>Index</li>
+                    <li>Beds Broken Lost Ratio</li>
+                    <li>Win Loss Ratio</li>
+                    <li>Time Online</li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="gamemode">
+                <div>
+                  <img src="/static/images/skywarseye.png" style="padding-left: 15px;" height="200px;" width="200px;">
+                  <h1>Skywars</h1>
+                  <!-- <p>Use this overlay to see the stats of people in your skywars games.</p>
+                  <ul>
+                    <li>Winstreak</li>
+                    <li>FKDR</li>
+                    <li>Final Kills</li>
+                    <li>Index</li>
+                    <li>Beds Broken Lost Ratio</li>
+                    <li>Win Loss Ratio</li>
+                    <li>Time Online</li>
+                  </ul> -->
+                </div>
+              </div>
+              <div class="gamemode">
+                <div>
+                  <img src="/static/images/bridgerod.png" height="200px;" width="200px;">
+                  <h1>Bridge</h1>
+                  <!-- <p>Use this overlay to see the stats of people in your bridge games.</p> -->
+                </div>
+              </div>
+            </div>
+            <p>You can use this overlay to check the stats of the players in your bedwars, skywars, and bridge games. More gamemodes may be added soon.</p>
           </div>
         </div>
-        <div class="feature">
+        <div class="feature" data-aos="fade-right">
+          <h2>Search for any Player's Stats</h2>
+        </div>
+        <!-- <div class="feature">
           <div>
             <img src="/static/images/search.png" height="200px;" width="200px;">
             <h2>Search</h2>
             <p>Search for any player's stats</p>
           </div>
 
-        </div>
+        </div> -->
         <!-- <div class="feature"></div> -->
       </div>
+    </div>
+    <div class="intro">
+      <h1>Overlay Download</h1>
+    </div>
+
+    <div class="download-area" data-aos = "fade-right">
+
+      <div class="download windows">
+        <div>
+          <img src="static/images/win-logo.png" alt="windows logo" height="200px;" width="200px;">
+        </div>
+        <button class="download-button">Windows Download<i class="fa fa-download" aria-hidden="true"></i></button>
+      </div>
+      <div class="download mac">
+        <div>
+          <img src="static/images/mac-logo.png" alt="windows logo" height="200px;" width="200px;">
+        </div>
+        <button class="download-button">Mac Download<i class="fa fa-download" aria-hidden="true"></i></button>
+      </div>
+    </div>
     </div>
 
 
@@ -172,7 +224,7 @@
   <footer>
 
   </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     $("button").click(function () {
       $("li").delay(500).each(function (i) {
@@ -242,6 +294,20 @@
       }
     }, 5000)
   </script>
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 120,
+      duration: 1000,
+    });
+    document.querySelectorAll('img')
+      .forEach((img) =>
+        img.addEventListener('load', () => 
+          AOS.refresh()
+        )
+      )
+    window.addEventListener('load', AOS.refresh)
   </script>
 </body>
 

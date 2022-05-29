@@ -38,6 +38,8 @@ body {
     padding: 0;
     overflow: auto;
     box-sizing: border-box;
+    color: white;
+    overflow-x: hidden;
 }
 
 body {
@@ -276,7 +278,7 @@ main {
 
 
 .intro {
-    padding: 70px;
+    padding-top: 70px;
     text-align: center;
     color: white;
     border-radius: 20px;
@@ -288,7 +290,8 @@ main {
 
 .slider {
     margin: auto;
-    margin-top: 40%;
+    /* margin-top: 40%; */
+    margin-bottom: 5%;
     width: 800px;
     height: 500px;
     border-radius: 10px;
@@ -506,7 +509,7 @@ main {
     padding-bottom: 30px;
 }
 
-.features-area {
+.gamemodes {
     display: flex;
     flex-wrap: wrap;
     flex-flow: row wrap;
@@ -514,33 +517,48 @@ main {
     margin: 0% 20%;
 }
 
-.feature {
+.gamemode {
     flex-grow: 0;
     flex-shrink: 0;
     text-align: center;
 }
 
-.feature div {
+.gamemode div {
     border-radius: 50px;
-    background-color: #343333;
-    width: 300px;
-    height: 350px;
-    padding: 10px;
-    box-shadow: #000000 5px 5px 5px;
+    /* background-color: var(--background-color); */
+    padding: 20px;
 }
 
-.feature h2 {
+.feature p {
+    text-align: center;
+    font-size: 30px;
+    margin: 0% 20%;
+}
+
+.feature {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.gamemode ul{
+    list-style: none;
+    margin: auto;
+    padding: 0;
+    text-align: left;
+}
+
+.gamemode h2 {
     color: white;
 }
 
-.feature img {
+.gamemode img {
     display: block;
     margin-left: auto;
     margin-right: auto;
     /* width: 40%; */
 }
 
-.feature p{
+.gamemode p{
     color: white;
 }
 
@@ -620,6 +638,18 @@ main {
     background-color: var(--square-background);
 }
 
-.first-container{
-    height: 100vh;
+.title-text{
+    text-align: center;
+    color: white;
+    padding-bottom: 30px;
+    margin-top: 60em;
+}
+
+.title-text h1{
+    font-size: 50px;
+}
+
+.feature h2{
+    margin-left: 5%;
+    font-size: 40px;
 }
