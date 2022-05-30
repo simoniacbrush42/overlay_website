@@ -529,7 +529,7 @@ main {
     padding: 20px;
 }
 
-.feature p {
+.feature h4 {
     text-align: left;
     font-size: 20px;
     margin: 0% 10%;
@@ -668,16 +668,31 @@ main {
     line-height: 30px;
 }
 
-.feature-text{
+.feature-text-right{
+    width: 500px;
+    padding-left: 80px;
+}
+.feature-text-left{
     width: 500px;
     padding-right: 80px;
 }
 
-.feature-text ul {
+.feature-text-left ul, .feature-text-right ul {
     padding-left: 80px;
 }
 
+.img-area img{
+    border-radius: 10%;
+}
+
 .img-area{
-    border-radius: 5px;
-    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+}
+
+.feature-text ul li{
+    display: inline;
+    padding: 10px;
 }

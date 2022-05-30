@@ -133,35 +133,82 @@
       </div>
       <div class="features-area">
         <div class="feature slide-left">
-          <div class="feature-text">
+          <div class="feature-text-left">
             <h2>Supports Multiple Gamemodes</h2>
-            <p>Use this overlay to see the stats of the players in your hypixel games</p>
+            <h4>Use this overlay to see the stats of the players in your hypixel games</h4>
             <ul>
-              <li>Bedwars</li>
-              <li>Skywars</li>
-              <li>Bridge Duels</li>
+              <p>Gamemodes Supported: Bedwars, Skywars, Bridge Duels</p>
             </ul>
           </div>
           
           <div class="img-area">
             <img src="/static/images/gamemodes.png" height="300px" width="300px">
+          </div>
+        </div>
+        <!-- <div class="feature slide-right">
+          <div class="feature-text">
+            <h2>Bedwars</h2>
+            <h4>The bedwars page allows you to see the stats of the players in your bedwars games</h4>
+            <ul>
+              <p>Stats Tracked: WS, FKDR, Finals, Index, BBL, WLR, Time Online</p>
+            </ul>
+          </div>
+          
+          <div class="img-area">
+            <img src="/static/images/overlay8.PNG" height="300px" width="500px">
+          </div>
+        </div>
+        <div class="feature slide-left">
+          <div class="feature-text">
+            <h2>Skywars</h2>
+            <h4>The Skywars page allows you to see the stats of the players as your game starts and in the lobby</h4>
+            <ul>
+              <p>Stats Tracked: WS, Kills, KDR, WLR, Time Online</p>
+            </ul>
+          </div>
+          
+          <div class="img-area">
+            <img src="/static/images/overlay9.PNG" height="300px" width="500px">
           </div>
         </div>
         <div class="feature slide-right">
           <div class="feature-text">
-            <h2>Search</h2>
-            <p>Search for the stats of any player on hypixel</p>
+            <h2>Bridge Duels</h2>
+            <h4>The bridge duels page allows you to see the stats of your opponents in your bridge duels games</h4>
             <ul>
-              <li>Bedwars</li>
-              <li>Skywars</li>
-              <li>Bridge Duels</li>
+              <p>Stats Tracked: Title, WS, Wins, WLR, Time Online</p>
             </ul>
           </div>
           
           <div class="img-area">
-            <img src="/static/images/gamemodes.png" height="300px" width="300px">
+            <img src="/static/images/overlay7.PNG" height="300px" width="500px">
+          </div>
+        </div> -->
+        <div class="feature slide-right">
+          <div class="img-area">
+            <img src="/static/images/overlay3.PNG" height="300px" width="500px">
+          </div>
+          <div class="feature-text-right">
+            <h2>Search</h2>
+            <h4>Search for the overall stats of any player on Hypixel</h4>
+            <ul>
+              <p>Stats Tracked: Latest Login, Network Level, Bedwars, Skywars, Duels</p>
+            </ul>
           </div>
         </div>
+        <div class="feature slide-left">
+          <div class="feature-text-left">
+            <h2>Settings</h2>
+            <h4>Customize your settings for the best user experience</h4>
+            <ul>
+              <p>More customization coming later </p>
+            </ul>
+          </div>
+          <div class="img-area">
+            <img src="/static/images/overlay10.PNG" height="300px" width="500px">
+          </div>
+        </div>
+        
         <!-- <div class="feature">
           <div>
             <img src="/static/images/search.png" height="200px;" width="200px;">
@@ -179,13 +226,13 @@
 
     <div class="download-area" data-aos = "fade-right">
 
-      <div class="download windows">
+      <div class="download windows slide-down">
         <div>
           <img src="static/images/win-logo.png" alt="windows logo" height="200px;" width="200px;">
         </div>
         <button class="download-button">Windows Download<i class="fa fa-download" aria-hidden="true"></i></button>
       </div>
-      <div class="download mac">
+      <div class="download mac slide-down">
         <div>
           <img src="static/images/mac-logo.png" alt="windows logo" height="200px;" width="200px;">
         </div>
@@ -278,16 +325,23 @@
       distance: '150%',
       origin: 'left',
       opacity: null,
-      duration: 1000
+      duration: 1500
     };
     var slideRight = {
       distance: '150%',
       origin: 'right',
       opacity: null,
-      duration: 1000
+      duration: 1500
     };
+    var slideDown = {
+      distance: '150%',
+      origin: 'top',
+      opacity: 0,
+      duration: 1500
+    }
     ScrollReveal().reveal('.slide-left', slideLeft);
     ScrollReveal().reveal('.slide-right', slideRight);
+    ScrollReveal().reveal('.slide-down', slideDown)
   </script>
 </body>
 
