@@ -285,7 +285,7 @@ main {
 }
 
 .intro h1 {
-    font-size: 50px;
+    font-size: 64px;
 }
 
 .slider {
@@ -530,9 +530,9 @@ main {
 }
 
 .feature p {
-    text-align: center;
-    font-size: 30px;
-    margin: 0% 20%;
+    text-align: left;
+    font-size: 20px;
+    margin: 0% 10%;
 }
 
 .feature {
@@ -642,14 +642,42 @@ main {
     text-align: center;
     color: white;
     padding-bottom: 30px;
-    margin-top: 60em;
+    margin-top: 10em;
 }
 
 .title-text h1{
-    font-size: 50px;
+    font-size: 64px;
 }
 
 .feature h2{
     margin-left: 5%;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.first-container{
+    /* padding-top: 50em; */
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-basis: 50%;
+    justify-content: space-evenly;
+    line-height: 30px;
+}
+
+.feature-text{
+    width: 500px;
+    padding-right: 80px;
+}
+
+.feature-text ul {
+    padding-left: 80px;
+}
+
+.img-area{
+    border-radius: 5px;
+    margin-top: 5%;
 }
