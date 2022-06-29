@@ -22,9 +22,9 @@
 
         <!-- <h1><img src="static/images/icon.ico" alt="" width="60" height="60"/>Foresight Overlay</h1> -->
         <ul class="menu faded" id="menu">
-          <li class="hide"><a>Download</a></li>
-          <li class="hide"><a>Features</a></li>
-          <li class="hide"><a>Commands</a></li>
+          <li class="hide"><a href="#features-container">Features</a></li>
+          <li class="hide"><a href="#commands-area">Commands</a></li>
+          <li class="hide"><a href="#download-area">Download</a></li>
         </ul>
         <button class="menu-button" id="spans">
           <span></span>
@@ -127,7 +127,7 @@
 
 
 
-    <div class="features-container">
+    <div class="features-container" id="features-container">
       <div class="intro">
         <h1>Features</h1>
       </div>
@@ -220,11 +220,36 @@
         <!-- <div class="feature"></div> -->
       </div>
     </div>
+    <div class="intro" id="commands-area">
+      <h1>Helpful Commands</h1>
+    </div>
+    <div class="commands-area" >
+      <div class="command slide-up">
+        <p>/who</p>
+        <p class="arrow">⟶</p>
+        <p class="endp">adds all the players in your game to the overlay</p>
+      </div>
+      <div class="command slide-down">
+        <p>/p list</p>
+        <p class="arrow">⟶</p>
+        <p class="endp">adds all the players in your party to the overlay</p>
+      </div>
+      <div class="command slide-up">
+        <p>/g list</p>
+        <p class="arrow">⟶</p>
+        <p class="endp">adds all the players in your guild to the overlay</p>
+      </div>
+      <div class="command slide-down">
+        <p>/w ![username]</p>
+        <p class="arrow">⟶</p>
+        <p class="endp">adds an individual player to the overlay</p>
+      </div>
+    </div>
     <div class="intro">
       <h1>Overlay Download</h1>
     </div>
 
-    <div class="download-area" data-aos = "fade-right">
+    <div class="download-area" id="download-area" data-aos = "fade-right">
 
       <div class="download windows slide-down">
         <div>
@@ -339,9 +364,16 @@
       opacity: 0,
       duration: 1500
     }
+    var slideUp = {
+      distance: '150%',
+      origin: 'bottom',
+      opacity: 0,
+      duration: 1500
+    }
     ScrollReveal().reveal('.slide-left', slideLeft);
     ScrollReveal().reveal('.slide-right', slideRight);
     ScrollReveal().reveal('.slide-down', slideDown)
+    ScrollReveal().reveal('.slide-up', slideUp)
   </script>
 </body>
 

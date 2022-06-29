@@ -29,6 +29,8 @@
     --negative-lightest: #ff7058;
     --negative-second: #ff3d19;
     --negative-darkest: #e90400;
+
+    --hover-color: #5025d0;
 }
 html,
 body {
@@ -40,6 +42,7 @@ body {
     box-sizing: border-box;
     color: white;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -156,9 +159,9 @@ nav {
 
 .menu li a:hover {
     transition: 0.5s;
-    font-size: 20px;
     /* color: var(--square-lightest); */
     cursor: pointer;
+    color: var(--hover-color);
 }
 
 
@@ -695,4 +698,23 @@ main {
 .feature-text ul li{
     display: inline;
     padding: 10px;
+}
+
+.command{
+    display: grid;
+    grid-template-columns: 5fr 1fr 5fr;
+}
+
+.commands-area{
+    margin: 0% 15%;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+}
+
+.endp{
+    display: flex;
+    justify-content: flex-end;
 }
