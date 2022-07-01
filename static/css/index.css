@@ -481,6 +481,7 @@ main {
     background-color: #8f71e7;
     border-radius: 10px;
     border: none;
+    cursor: pointer;
 }
 
 .download-button:hover {
@@ -645,7 +646,7 @@ main {
     text-align: center;
     color: white;
     padding-bottom: 30px;
-    margin-top: 10em;
+    margin-top: 7em;
 }
 
 .title-text h1{
@@ -717,4 +718,9 @@ main {
 .endp{
     display: flex;
     justify-content: flex-end;
+}
+
+.download-link{
+    text-decoration: none;
+    color: inherit;
 }
