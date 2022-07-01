@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 :root {
-    --background-color: #111;
-    --lighter-background: #111;
+    --background-color: #191a1f;
+    --lighter-background: #202129;
 
-    --square-background: rgba(128,128,128,.2);
+    --header-background: #131217;
+    --header-border: #212227;
+    --white-text: #dddce1;
+    --grey-text: #78777c;
+
+    --square-background: #121318;
 
     /*squares*/
     --square-lightest: #274868;
@@ -40,10 +45,11 @@ body {
     padding: 0;
     overflow: auto;
     box-sizing: border-box;
-    color: white;
+    color: var(--white-text);
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
+
 
 body {
     height: 100vh;
@@ -68,9 +74,9 @@ nav {
     left: 0;
     right: 0;
     z-index: 99;
-    background-color: var(--lighter-background);
+    background-color: var(--header-background);
     padding: 0px 32px;
-    border-bottom: 3px solid rgba(51,51,51,.25);
+    border-bottom: 3px solid var(--header-border);
 }
 
 .menu-button {
@@ -92,7 +98,7 @@ nav {
     margin-bottom: 5px;
     position: relative;
 
-    background-color: white;
+    background-color: var(--white-text);
     border-radius: 6px;
     z-index: 1;
     transform-origin: 0 0;
@@ -133,7 +139,7 @@ nav {
 }
 
 .menu a {
-    color: white;
+    color: var(--white-text);
     margin: 0;
     font-weight: 600;
     text-decoration: none;
@@ -161,7 +167,7 @@ nav {
     transition: 0.5s;
     /* color: var(--square-lightest); */
     cursor: pointer;
-    color: var(--hover-color);
+    color: var(--grey-text);
 }
 
 
@@ -178,7 +184,7 @@ nav {
 
 .images-label h1 {
     font-size: 60px;
-    color: white;
+    color: var(--white-text);
 }
 
 @media (min-width: 870px) {
@@ -263,7 +269,7 @@ nav {
 
 .logo h1 {
     display: inline;
-    color: white;
+    color: var(--white-text);
     font-size: 30px;
     font-weight: 900;
     letter-spacing: 2px;
@@ -283,7 +289,7 @@ main {
 .intro {
     padding-top: 70px;
     text-align: center;
-    color: white;
+    color: var(--white-text);
     border-radius: 20px;
 }
 
@@ -395,7 +401,7 @@ main {
 }
 
 .navigation-auto div {
-    border: 2px solid white;
+    border: 2px solid var(--white-text);
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -456,6 +462,10 @@ main {
 }
 
 .download {
+    padding-top: 20px;
+}
+
+.download-content{
     background-color: var(--square-background);
     height: 200px;
     width: 200px;
@@ -465,30 +475,30 @@ main {
     transition: 1s;
 }
 
-.download:hover {
+.download-content:hover {
     transition: 1s;
-    box-shadow: #000000 5px 5px 5px;
+    /* box-shadow: #000000 5px 5px 5px; */
 }
 
 .download-button {
     text-align: center;
     font-size: 17px;
     box-shadow: none;
-    transition: 1s;
+    transition: 0.5s;
     width: 200px;
     height: 50px;
     margin-top: -100%;
-    background-color: #8f71e7;
+    background-color: #6145b5;
+    /* background-color: rgb(51 20 77); */
     border-radius: 10px;
     border: none;
     cursor: pointer;
+    /* color: var(--grey-text); */
 }
 
 .download-button:hover {
     background-color: #5025d0;
-    border-color: #5025d0;
-    /* box-shadow: #000000 2px 2px 2px; */
-    transition: 1s;
+    transition: 0.5s;
 }
 
 /* .download-button:focus:after{
@@ -552,7 +562,7 @@ main {
 }
 
 .gamemode h2 {
-    color: white;
+    color: var(--white-text);
 }
 
 .gamemode img {
@@ -563,7 +573,7 @@ main {
 }
 
 .gamemode p{
-    color: white;
+    color: var(--white-text);
 }
 
 /* .scrolldown {
@@ -639,18 +649,21 @@ main {
 
 .features-container{
     width: 100%;
-    background-color: var(--square-background);
+    background-color: var(--lighter-background);
+    border-top: 3px solid var(--header-border);
+    border-bottom: 3px solid var(--header-border);
 }
 
 .title-text{
     text-align: center;
-    color: white;
-    padding-bottom: 30px;
+    color: var(--white-text);
+    /* padding-bottom: 30px; */
     margin-top: 7em;
 }
 
 .title-text h1{
     font-size: 64px;
+    margin: 0;
 }
 
 .feature h2{
@@ -723,4 +736,28 @@ main {
 .download-link{
     text-decoration: none;
     color: inherit;
+}
+
+.download-now{
+    text-align: center;
+    padding: 20px;
+}
+.download-now button{
+    text-align: center;
+    font-size: 20px;
+    box-shadow: none;
+    transition: 0.5s;
+    width: 200px;
+    height: 50px;
+    /* margin-top: -100%; */
+    background-color: #6145b5;
+    /* background-color: rgb(51 20 77); */
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.download-now button:hover{
+    background-color: #5025d0;
+    transition: 0.5s;
 }
